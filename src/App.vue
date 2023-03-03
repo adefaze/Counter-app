@@ -1,21 +1,26 @@
 
 
-<script setup> 
-  import {ref} from "vue";
-
+<script setup>
+import {ref} from 'vue';
   const count = ref(0);
 
+  const addToCount = ()=>{
+    count.value = count.value + 1
+    }
+
+     const subtractFromCount = ()=>{
+    count.value = count.value - 1
+    }
 
 </script>
-
 
 <template>
   <main>
     <div>
-      <h2>The count is...</h2>
+      <h1>The count is...</h1>
       <p>{{count}}</p>
-      <button @click="count++">+</button>
-      <button @click="count--">-</button>
+      <button @click="subtractFromCount()">-</button>
+      <button @click="addToCount()">+</button>
     </div>
   </main>
 </template>
