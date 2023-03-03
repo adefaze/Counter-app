@@ -16,8 +16,8 @@ import {ref} from 'vue';
 
 <template>
   <main>
-    <div>
-      <h1>The count is...</h1>
+    <div class="bg-gray-600">
+      <h1 class="text-right">The count is...</h1>
       <p>{{count}}</p>
       <button @click="subtractFromCount()">-</button>
       <button @click="addToCount()">+</button>
